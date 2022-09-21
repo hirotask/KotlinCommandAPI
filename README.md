@@ -2,16 +2,26 @@
 - 案1
 ```kotlin
 plugin.register(mainCommand = "test") {
-    subcommand("sub1") {
+    arg("sub1") {
         //ここに処理を書く
-    }
-    subcommand("sub2") {
-        arg("arg1") {
+        execute { //"/test sub1"を実行した時
             
+        }
+        
+    }
+    arg("sub2") {
+        arg("arg1") {
+            execute { //"/test sub2 arg1"を実行した時
+                
+            }
         }
         arg("arg2") {
             
         }
+    }
+    
+    execute { //"/test"を実行した時
+        
     }
 }
 ```
@@ -20,10 +30,10 @@ plugin.register(mainCommand = "test") {
 ```kotlin
 val command = CommandAPI(plugin)
 command.register {
-    subcommand("sub1") {
+    arg("sub1") {
         
     }
-    subcommand("sub2") {
+    arg("sub2") {
         arg("arg1") {
 
         }

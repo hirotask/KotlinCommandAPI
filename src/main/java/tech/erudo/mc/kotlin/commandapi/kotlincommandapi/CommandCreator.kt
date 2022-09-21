@@ -14,7 +14,7 @@ class CommandCreator(val mainCommand: String) {
     private var executeAction: CommandExecuteAction = {}
 
 
-    fun subcommand(subcommand: String, action: CommandCreateAction) {}
+    fun arg(arg: String, action: CommandCreateAction) {}
 
     fun execute(action: CommandExecuteAction) {
         executeAction = action
