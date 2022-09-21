@@ -6,7 +6,11 @@ class KotlinCommandAPI : JavaPlugin() {
     override fun onEnable() {
         this.command("test") {
             execute {
-                sender.sendMessage("hello world")
+                when(args[0].lowercase()) {
+                    "arg1" ->  sender.sendMessage("hello world")
+                    "arg2" -> sender.sendMessage("hello japan")
+                    else -> sender.sendMessage("hello mc")
+                }
             }
         }
 

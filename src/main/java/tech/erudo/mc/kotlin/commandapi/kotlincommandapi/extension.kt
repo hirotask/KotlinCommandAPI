@@ -6,8 +6,6 @@ import org.bukkit.plugin.java.JavaPlugin
 
 typealias CommandCreateAction = CommandCreator.() -> Unit
 
-typealias CommandTabAction = CommandTab.Container.() -> Unit
-
 typealias CommandExecuteAction = CommandExecuteParam.() -> Unit
 
 fun JavaPlugin.command(mainCommand: String, action: CommandCreateAction) {
