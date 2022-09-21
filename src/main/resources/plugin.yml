@@ -1,0 +1,4 @@
+name: KotlinCommandAPI
+version: '${version}'
+main: tech.erudo.mc.kotlin.commandapi.kotlincommandapi.KotlinCommandAPI
+api-version: 1.18
