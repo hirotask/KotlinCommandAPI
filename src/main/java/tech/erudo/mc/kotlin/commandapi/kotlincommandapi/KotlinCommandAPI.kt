@@ -5,8 +5,8 @@ import org.bukkit.plugin.java.JavaPlugin
 class KotlinCommandAPI : JavaPlugin() {
     override fun onEnable() {
         this.command("test") {
-            subcommand("test") {
-
+            execute {
+                sender.sendMessage("hello world")
             }
         }
 

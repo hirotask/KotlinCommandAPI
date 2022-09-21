@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version "1.7.10"
+    id 'org.jetbrains.kotlin.jvm' version "1.6.20"
     id 'java'
 }
 
@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-wasm:1.7.10"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-wasm:1.6.20"
     compileOnly 'io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT'
 }
 

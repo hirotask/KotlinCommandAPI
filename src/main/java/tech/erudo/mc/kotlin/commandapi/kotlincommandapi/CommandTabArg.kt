@@ -1,0 +1,1 @@
+package tech.erudo.mc.kotlin.commandapi.kotlincommandapi
